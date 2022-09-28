@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+/* Font Family */
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+body {
+    margin: 50px 20px;
+    background-image: linear-gradient(rgba(130, 139, 170, 0.7),rgba(130, 139, 170, 0.7));
+  }
+  
+  .container-box {
+    /* border: 1px solid black; */
+    border-radius: 30px;    
+    padding: 10px;
+    background: linear-gradient(135deg,  #71b7e6, #9b59b6);
+  }
+  
+  html{
+    font-size: 60%;   /*font size in % */
+  }
+
+  h2{
+    font-size: 40px; /*font size in px */
+    text-align: center;
+  }
+
+  div {
+    /* margin-bottom: 80px; */
+    margin: auto;
+    font-size: 2rem; /*font size in rem */
+    height: 400px;
+    width: 500px;
+  }
+  
+  td{
+    width: 200px;
+    font-size: 2rem;
+  }
+
+  #name,#email,#number,#gender,#dob {
+    width: 350px;
+    font-size: 2rem;
+  }
+
+  
+form .button{
+  height: 45px;
+  margin: 35px 0
+}
+
+.button input{
+  height: 50px;
+  width: 110px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  margin-left: 200px;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.button input:hover{
+ /* transform: scale(0.99); */
+ background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+ }
+
+ .button {
+  text-align: center;
+ }
+
+
+
+
+
+
+  
+
+
+

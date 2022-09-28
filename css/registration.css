@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+div.scroll {
+    Width: 5px;
+    Height: 10px;
+    Overflow-x: scroll;
+}
+
+html {
+    overflow: scroll;
+}
+
+/* Scrollbar styles */
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    /* background: linear-gradient(135deg, #71b7e6, #9b59b6); */
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
+}
+
+.container {
+    max-width: 600px;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    overflow-y: auto;
+}
+
+.container .title {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.container .title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #66ffff, #cc99ff);
+}
+
+.content form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+    max-height: 150px;
+    overflow-y: scroll;
+}
+
+form .user-details .input-box {
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+
+form .input-box span.details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input {
+    height: 45px;
+    width: 150%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-box-1 input {
+    height: 14px;
+    width: 6%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+    border-color: #9b59b6;
+}
+
+.container-1 {
+    float: left;
+    margin: 10px;
+}
+
+.right {
+    float: left;
+    margin: 10px;
+    color: #000000ea;
+    font-size: 18px;
+    /* font-weight: bold; */
+}
+
+.radio {
+    width: 10px;
+    position: relative;
+}
+
+.radio label {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    border-radius: 50px;
+    /* box-shadow: inset 0px 1px 1px white, 3px 3px 9px rgba(0, 0, 0, 0.5); */
+    border: 1px solid black;
+}
+
+.radio label:after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border: 6px solid grey;
+    border-radius: 50px;
+    opacity: 0;
+}
+
+.gender span {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.radio label:hover::after {
+    opacity: 0.3;
+}
+
+.radio input[type=radio] {
+    visibility: hidden;
+}
+
+.radio input[type=radio]:checked+label:after {
+    opacity: 1;
+}
+
+form .text {
+    color: #5b13b9;
+}
+
+form .button {
+    height: 45px;
+    margin: 35px 0;
+}
+
+form .button input {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #66ffff, #cc99ff);
+}
+
+form .button input:hover {
+    /* transform: scale(0.99); */
+    background: linear-gradient(-135deg, #66ffff, #cc99ff);
+}
+
+p {
+    text-align: center;
+    font-weight: 500;
+}
